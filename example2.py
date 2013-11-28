@@ -19,8 +19,8 @@ GObject.threads_init()
 
 def parse_args():
     parser = argparse.ArgumentParser(prog='example1.py')
-    parser.add_argument('--volume', help='Указать громкость (0-100)', type=int, default=100)
-    parser.add_argument('--output', help='Путь к файлу в который нужно сохранить поток',
+    parser.add_argument('--volume', help='Указать громкость (0-100) (default: 100)', type=int, default=100)
+    parser.add_argument('--output', help='Путь к файлу в который нужно сохранить поток (default: /tmp/out.ogg)',
                         type=str, default='/tmp/out.ogg')
     parser.add_argument('location')
     args = parser.parse_args()
